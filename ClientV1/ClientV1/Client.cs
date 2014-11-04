@@ -26,7 +26,7 @@ namespace ClientV1
 
             tcpClientObject = new TcpClient();
 
-            tcpClientObject.Connect(ipAddress, portNumber);  
+            tcpClientObject.Connect(ipAddress, portNumber);
 
             receiveThread = new Thread(Receiver); 
             receiveThread.Start();

@@ -46,97 +46,96 @@
             // lblMsg
             // 
             this.lblMsg.AutoSize = true;
-            this.lblMsg.Location = new System.Drawing.Point(13, 13);
+            this.lblMsg.Location = new System.Drawing.Point(13, 14);
             this.lblMsg.Name = "lblMsg";
-            this.lblMsg.Size = new System.Drawing.Size(47, 12);
+            this.lblMsg.Size = new System.Drawing.Size(50, 13);
             this.lblMsg.TabIndex = 0;
             this.lblMsg.Text = "Message";
             // 
             // lbMessage
             // 
             this.lbMessage.FormattingEnabled = true;
-            this.lbMessage.ItemHeight = 12;
-            this.lbMessage.Location = new System.Drawing.Point(15, 29);
+            this.lbMessage.Location = new System.Drawing.Point(15, 31);
             this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(360, 316);
+            this.lbMessage.Size = new System.Drawing.Size(360, 342);
             this.lbMessage.TabIndex = 1;
             // 
             // tbSendMessage
             // 
-            this.tbSendMessage.Location = new System.Drawing.Point(15, 409);
+            this.tbSendMessage.Location = new System.Drawing.Point(15, 443);
             this.tbSendMessage.Name = "tbSendMessage";
-            this.tbSendMessage.Size = new System.Drawing.Size(360, 21);
+            this.tbSendMessage.Size = new System.Drawing.Size(360, 20);
             this.tbSendMessage.TabIndex = 2;
             // 
             // lblSendMessage
             // 
             this.lblSendMessage.AutoSize = true;
-            this.lblSendMessage.Location = new System.Drawing.Point(15, 391);
+            this.lblSendMessage.Location = new System.Drawing.Point(15, 424);
             this.lblSendMessage.Name = "lblSendMessage";
-            this.lblSendMessage.Size = new System.Drawing.Size(83, 12);
+            this.lblSendMessage.Size = new System.Drawing.Size(78, 13);
             this.lblSendMessage.TabIndex = 3;
             this.lblSendMessage.Text = "Enter Message";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(404, 29);
+            this.lblName.Location = new System.Drawing.Point(404, 31);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(41, 12);
+            this.lblName.Size = new System.Drawing.Size(41, 13);
             this.lblName.TabIndex = 4;
             this.lblName.Text = "Name: ";
             // 
             // vScrollBar1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(357, 29);
+            this.vScrollBar1.Location = new System.Drawing.Point(357, 31);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 316);
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 342);
             this.vScrollBar1.TabIndex = 5;
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(406, 56);
+            this.tbName.Location = new System.Drawing.Point(406, 61);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(149, 21);
+            this.tbName.Size = new System.Drawing.Size(149, 20);
             this.tbName.TabIndex = 6;
             // 
             // tbIPAddress
             // 
-            this.tbIPAddress.Location = new System.Drawing.Point(406, 148);
+            this.tbIPAddress.Location = new System.Drawing.Point(406, 160);
             this.tbIPAddress.Name = "tbIPAddress";
-            this.tbIPAddress.Size = new System.Drawing.Size(149, 21);
+            this.tbIPAddress.Size = new System.Drawing.Size(149, 20);
             this.tbIPAddress.TabIndex = 7;
             // 
             // lblServerIP
             // 
             this.lblServerIP.AutoSize = true;
-            this.lblServerIP.Location = new System.Drawing.Point(406, 111);
+            this.lblServerIP.Location = new System.Drawing.Point(406, 120);
             this.lblServerIP.Name = "lblServerIP";
-            this.lblServerIP.Size = new System.Drawing.Size(59, 12);
+            this.lblServerIP.Size = new System.Drawing.Size(51, 13);
             this.lblServerIP.TabIndex = 8;
             this.lblServerIP.Text = "Server IP";
             // 
             // lblServerPort
             // 
             this.lblServerPort.AutoSize = true;
-            this.lblServerPort.Location = new System.Drawing.Point(408, 203);
+            this.lblServerPort.Location = new System.Drawing.Point(408, 220);
             this.lblServerPort.Name = "lblServerPort";
-            this.lblServerPort.Size = new System.Drawing.Size(71, 12);
+            this.lblServerPort.Size = new System.Drawing.Size(60, 13);
             this.lblServerPort.TabIndex = 9;
             this.lblServerPort.Text = "Server Port";
             // 
             // tbPort
             // 
-            this.tbPort.Location = new System.Drawing.Point(408, 238);
+            this.tbPort.Location = new System.Drawing.Point(408, 258);
             this.tbPort.Name = "tbPort";
-            this.tbPort.Size = new System.Drawing.Size(147, 21);
+            this.tbPort.Size = new System.Drawing.Size(147, 20);
             this.tbPort.TabIndex = 10;
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(410, 322);
+            this.btnConnect.Location = new System.Drawing.Point(410, 349);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(145, 23);
+            this.btnConnect.Size = new System.Drawing.Size(145, 25);
             this.btnConnect.TabIndex = 11;
             this.btnConnect.Text = "Connect Server";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -144,9 +143,9 @@
             // 
             // btnSendMessage
             // 
-            this.btnSendMessage.Location = new System.Drawing.Point(410, 407);
+            this.btnSendMessage.Location = new System.Drawing.Point(410, 441);
             this.btnSendMessage.Name = "btnSendMessage";
-            this.btnSendMessage.Size = new System.Drawing.Size(145, 23);
+            this.btnSendMessage.Size = new System.Drawing.Size(145, 25);
             this.btnSendMessage.TabIndex = 12;
             this.btnSendMessage.Text = "Send Message";
             this.btnSendMessage.UseVisualStyleBackColor = true;
@@ -154,10 +153,10 @@
             // 
             // ClientForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(567, 442);
+            this.ClientSize = new System.Drawing.Size(567, 479);
             this.Controls.Add(this.btnSendMessage);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.tbPort);
