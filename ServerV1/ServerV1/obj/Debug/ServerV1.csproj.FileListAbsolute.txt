@@ -1,0 +1,9 @@
+C:\Users\CC\Desktop\ServerV1\ServerV1\bin\Debug\ServerV1.exe.config
+C:\Users\CC\Desktop\ServerV1\ServerV1\bin\Debug\ServerV1.exe
+C:\Users\CC\Desktop\ServerV1\ServerV1\bin\Debug\ServerV1.pdb
+C:\Users\CC\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.csprojResolveAssemblyReference.cache
+C:\Users\CC\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.ServerForm.resources
+C:\Users\CC\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.Properties.Resources.resources
+C:\Users\CC\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.csproj.GenerateResource.Cache
+C:\Users\CC\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.exe
+C:\Users\CC\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.pdb

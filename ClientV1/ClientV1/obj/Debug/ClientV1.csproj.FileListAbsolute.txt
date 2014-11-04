@@ -1,0 +1,9 @@
+C:\Users\CC\Desktop\ClientV1\ClientV1\bin\Debug\ClientV1.exe.config
+C:\Users\CC\Desktop\ClientV1\ClientV1\bin\Debug\ClientV1.exe
+C:\Users\CC\Desktop\ClientV1\ClientV1\bin\Debug\ClientV1.pdb
+C:\Users\CC\Desktop\ClientV1\ClientV1\obj\Debug\ClientV1.csprojResolveAssemblyReference.cache
+C:\Users\CC\Desktop\ClientV1\ClientV1\obj\Debug\ClientV1.Properties.Resources.resources
+C:\Users\CC\Desktop\ClientV1\ClientV1\obj\Debug\ClientV1.csproj.GenerateResource.Cache
+C:\Users\CC\Desktop\ClientV1\ClientV1\obj\Debug\ClientV1.exe
+C:\Users\CC\Desktop\ClientV1\ClientV1\obj\Debug\ClientV1.pdb
+C:\Users\CC\Desktop\ClientV1\ClientV1\obj\Debug\ClientV1.ClientForm.resources
