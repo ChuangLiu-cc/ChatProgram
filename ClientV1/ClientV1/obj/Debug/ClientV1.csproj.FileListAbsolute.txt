@@ -7,3 +7,12 @@ C:\Users\CC\Desktop\ClientV1\ClientV1\obj\Debug\ClientV1.csproj.GenerateResource
 C:\Users\CC\Desktop\ClientV1\ClientV1\obj\Debug\ClientV1.exe
 C:\Users\CC\Desktop\ClientV1\ClientV1\obj\Debug\ClientV1.pdb
 C:\Users\CC\Desktop\ClientV1\ClientV1\obj\Debug\ClientV1.ClientForm.resources
+C:\Users\Chuang\Documents\GitHub\ChatProgram\ClientV1\ClientV1\bin\Debug\ClientV1.exe.config
+C:\Users\Chuang\Documents\GitHub\ChatProgram\ClientV1\ClientV1\obj\Debug\ClientV1.exe
+C:\Users\Chuang\Documents\GitHub\ChatProgram\ClientV1\ClientV1\obj\Debug\ClientV1.pdb
+C:\Users\Chuang\Documents\GitHub\ChatProgram\ClientV1\ClientV1\bin\Debug\ClientV1.exe
+C:\Users\Chuang\Documents\GitHub\ChatProgram\ClientV1\ClientV1\bin\Debug\ClientV1.pdb
+C:\Users\Chuang\Documents\GitHub\ChatProgram\ClientV1\ClientV1\obj\Debug\ClientV1.csprojResolveAssemblyReference.cache
+C:\Users\Chuang\Documents\GitHub\ChatProgram\ClientV1\ClientV1\obj\Debug\ClientV1.ClientForm.resources
+C:\Users\Chuang\Documents\GitHub\ChatProgram\ClientV1\ClientV1\obj\Debug\ClientV1.Properties.Resources.resources
+C:\Users\Chuang\Documents\GitHub\ChatProgram\ClientV1\ClientV1\obj\Debug\ClientV1.csproj.GenerateResource.Cache

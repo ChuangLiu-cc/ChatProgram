@@ -29,9 +29,10 @@ namespace ServerV1
         /*listen method and start listening thread*/
         public string Listen(int portNumber)
         {
-            IPAddress[] localIP = Dns.GetHostAddresses(Dns.GetHostName());  //get local IP
+            //IPAddress[] localIP = Dns.GetHostAddresses(Dns.GetHostName());  //get local IP
+            IPAddress localip = IPAddress.Parse(GetLocalIp());
 
-            this.listenObject = new TcpListener(localIP[1], portNumber); //listen object
+            this.listenObject = new TcpListener(/*localIP[1]*/localip, portNumber); //listen object
 
             this.listenThread = new Thread(ListenClient);       //thread of listen client 
 
@@ -108,10 +109,21 @@ namespace ServerV1
         /*get local Ipv4 address*/
         static string GetLocalIp()  
         {  
-            IPHostEntry IpEntry = Dns.GetHostEntry(Dns.GetHostName());
-            string myip = IpEntry.AddressList[1].ToString();
+            //IPHostEntry IpEntry = Dns.GetHostEntry(Dns.GetHostName());
+            //string myip = IpEntry.AddressList[1].ToString();
 
-            return myip;
+            //return myip;
+            IPHostEntry host;
+            string localIP = "?";
+            host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily.ToString() == "InterNetwork")
+                {
+                    localIP = ip.ToString();
+                }
+            }
+            return localIP;
         }
 
     }
