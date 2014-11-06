@@ -33,7 +33,6 @@
             this.tbSendMessage = new System.Windows.Forms.TextBox();
             this.lblSendMessage = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.tbName = new System.Windows.Forms.TextBox();
             this.tbIPAddress = new System.Windows.Forms.TextBox();
             this.lblServerIP = new System.Windows.Forms.Label();
@@ -55,6 +54,7 @@
             // lbMessage
             // 
             this.lbMessage.FormattingEnabled = true;
+            this.lbMessage.HorizontalScrollbar = true;
             this.lbMessage.Location = new System.Drawing.Point(15, 31);
             this.lbMessage.Name = "lbMessage";
             this.lbMessage.Size = new System.Drawing.Size(360, 342);
@@ -84,13 +84,6 @@
             this.lblName.Size = new System.Drawing.Size(41, 13);
             this.lblName.TabIndex = 4;
             this.lblName.Text = "Name: ";
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(357, 31);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 342);
-            this.vScrollBar1.TabIndex = 5;
             // 
             // tbName
             // 
@@ -164,7 +157,6 @@
             this.Controls.Add(this.lblServerIP);
             this.Controls.Add(this.tbIPAddress);
             this.Controls.Add(this.tbName);
-            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblSendMessage);
             this.Controls.Add(this.tbSendMessage);
@@ -172,6 +164,7 @@
             this.Controls.Add(this.lblMsg);
             this.Name = "ClientForm";
             this.Text = "Client";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClientForm_FormClosing);
             this.Load += new System.EventHandler(this.ClientForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -185,7 +178,6 @@
         private System.Windows.Forms.TextBox tbSendMessage;
         private System.Windows.Forms.Label lblSendMessage;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.TextBox tbIPAddress;
         private System.Windows.Forms.Label lblServerIP;

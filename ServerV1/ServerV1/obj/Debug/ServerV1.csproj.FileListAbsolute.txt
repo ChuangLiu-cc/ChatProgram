@@ -16,3 +16,21 @@ C:\Users\Chuang\Documents\GitHub\ChatProgram\ServerV1\ServerV1\obj\Debug\ServerV
 C:\Users\Chuang\Documents\GitHub\ChatProgram\ServerV1\ServerV1\obj\Debug\ServerV1.Properties.Resources.resources
 C:\Users\Chuang\Documents\GitHub\ChatProgram\ServerV1\ServerV1\obj\Debug\ServerV1.csproj.GenerateResource.Cache
 C:\Users\Chuang\Documents\GitHub\ChatProgram\ServerV1\ServerV1\bin\Debug\ServerV1.pdb
+C:\Users\cliu9-cc\Desktop\ServerV1\ServerV1\bin\Debug\ServerV1.exe.config
+C:\Users\cliu9-cc\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.exe
+C:\Users\cliu9-cc\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.pdb
+C:\Users\cliu9-cc\Desktop\ServerV1\ServerV1\bin\Debug\ServerV1.exe
+C:\Users\cliu9-cc\Desktop\ServerV1\ServerV1\bin\Debug\ServerV1.pdb
+C:\Users\cliu9-cc\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.csprojResolveAssemblyReference.cache
+C:\Users\cliu9-cc\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.ServerForm.resources
+C:\Users\cliu9-cc\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.Properties.Resources.resources
+C:\Users\cliu9-cc\Desktop\ServerV1\ServerV1\obj\Debug\ServerV1.csproj.GenerateResource.Cache
+C:\Users\Ben\Desktop\WMP-A6- IPC\ServerV1\ServerV1\bin\Debug\ServerV1.exe.config
+C:\Users\Ben\Desktop\WMP-A6- IPC\ServerV1\ServerV1\obj\Debug\ServerV1.exe
+C:\Users\Ben\Desktop\WMP-A6- IPC\ServerV1\ServerV1\obj\Debug\ServerV1.pdb
+C:\Users\Ben\Desktop\WMP-A6- IPC\ServerV1\ServerV1\bin\Debug\ServerV1.exe
+C:\Users\Ben\Desktop\WMP-A6- IPC\ServerV1\ServerV1\bin\Debug\ServerV1.pdb
+C:\Users\Ben\Desktop\WMP-A6- IPC\ServerV1\ServerV1\obj\Debug\ServerV1.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\WMP-A6- IPC\ServerV1\ServerV1\obj\Debug\ServerV1.ServerForm.resources
+C:\Users\Ben\Desktop\WMP-A6- IPC\ServerV1\ServerV1\obj\Debug\ServerV1.Properties.Resources.resources
+C:\Users\Ben\Desktop\WMP-A6- IPC\ServerV1\ServerV1\obj\Debug\ServerV1.csproj.GenerateResource.Cache

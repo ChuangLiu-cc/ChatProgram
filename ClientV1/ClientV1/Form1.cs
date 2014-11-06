@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * FILE NAME: Form1.cs
+ * PROJECT NAME: PROG 2120 a Assginment 06 IPC
+ * PROGRAMMER: Chuang Liu & Ben Lorantfy
+ * FIRST VERSION: 30/10/2014
+ * DESCRPTION: This is a cs file of winForm. It can handle event and use some control wiitin a client
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,26 +19,38 @@ namespace ClientV1
 {
     public partial class ClientForm : Form
     {
-        private Client ClientObj = new Client();
 
+        private Client ClientObject = new Client();   //client object
+        
         public ClientForm()
         {
             InitializeComponent();
         }
-
+        /*
+         * METHOD NAME: ClientForm_Load
+         * RETURN VALUE: void
+         * PARAMETERS: object sender, EventArgs e
+         * DESCRIPTION: when form start, will handle this event
+         */
         private void ClientForm_Load(object sender, EventArgs e)
         {
             btnSendMessage.Enabled = false; //can not send meassage if not connection
-            this.AcceptButton = btnSendMessage;
+            this.AcceptButton = btnSendMessage;  //send message button as a accept button
         }
-
+        
+        /*
+         * METHOD NAME: btnConnect_Click
+         * RETURN VALUE: void
+         * PARAMETERS: object sender, EventArgs e
+         * DESCRIPTION: click connect button will handle this event
+         */
         private void btnConnect_Click(object sender, EventArgs e)
         {
-            string nickName = tbName.Text;
-            string ip = tbIPAddress.Text;
-            string port = tbPort.Text;
+            string name = tbName.Text;
+            string ipAddress = tbIPAddress.Text;
+            string portNum = tbPort.Text;
 
-            if (string.IsNullOrEmpty(nickName) || string.IsNullOrEmpty(ip) || string.IsNullOrEmpty(port))
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(ipAddress) || string.IsNullOrEmpty(portNum))
             {
                 MessageBox.Show("Please completely enter your name and server IP address...");
                 return;
@@ -40,11 +59,11 @@ namespace ClientV1
             try
             {
 
-                ClientObj.SendConnection(ip, Convert.ToInt32(port)); 
+                ClientObject.SendConnectionToServer(ipAddress, Convert.ToInt32(portNum)); //connecting
 
-                ClientObj.receiveEvent += new Client.receiveDelegate(ClientObj_receiveEvent);
+                ClientObject.receiveEvent += new Client.receiveDelegate(ClientObject_receiveEvent);
 
-                ClientObj.Send(tbName.Text + " login succeed!");
+                ClientObject.SendData(this.tbName.Text + " login succeed!");
 
                 btnSendMessage.Enabled = true;
                 btnConnect.Enabled = false;
@@ -55,20 +74,34 @@ namespace ClientV1
                 return;
             }
         }
-
-        void ClientObj_receiveEvent(string receiveData)
+        /*
+         * METHOD NAME: ClientObj_receiveEvent
+         * RETURN VALUE: void
+         * PARAMETERS: string receiveData: receive data
+         * DESCRIPTION: this method can access control and let client object handle receuve event with delegate
+         */
+        public void ClientObject_receiveEvent(string receiveData)
         {
             try
             {
                 if (this.InvokeRequired)
                 {
-                    Client.receiveDelegate update = new Client.receiveDelegate(ClientObj_receiveEvent);
+                    Client.receiveDelegate update = new Client.receiveDelegate(ClientObject_receiveEvent);
 
                     this.Invoke(update, new object[] { receiveData });//send message to thread 
                 }
                 else
                 {
+                    if (receiveData == null) {
+                        receiveData = "Disconnected from server";
+                        ClientObject.Disconnect();
+                        Application.Exit();
+                    }
+
                     lbMessage.Items.Add(receiveData);//add data
+                    int visibleItems = lbMessage.ClientSize.Height / lbMessage.ItemHeight;
+                    lbMessage.TopIndex = Math.Max(lbMessage.Items.Count - visibleItems + 1, 0);
+                    
                 }
             }
             catch (Exception ex)
@@ -78,7 +111,12 @@ namespace ClientV1
             }
 
         }
-
+        /*
+         * METHOD NAME: btnSendMessage_Click
+         * RETURN VALUE: void
+         * PARAMETERS: object sender, EventArgs e
+         * DESCRIPTION: send message button event
+         */
         private void btnSendMessage_Click(object sender, EventArgs e)
         {
             try
@@ -87,8 +125,8 @@ namespace ClientV1
                 {
                     return;
                 }
-                ClientObj.Send(tbName.Text + " say: " + tbSendMessage.Text);//send message
-                tbSendMessage.Clear();//clean data
+                ClientObject.SendData(tbName.Text + " say: " + tbSendMessage.Text);//send message
+                tbSendMessage.Clear();//clean data in textbox
             }
             catch (Exception ex)
             {
@@ -97,16 +135,8 @@ namespace ClientV1
             }
         }
 
-        private void ClientForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
-
-        private void ClientForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            
-            ClientObj.tcpClientObject.Close();//close connection
-            this.Close();//close form
+        private void ClientForm_FormClosing(object sender, FormClosingEventArgs e) {
+            ClientObject.Disconnect();
         }
     }
 }
